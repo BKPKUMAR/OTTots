@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preschool Daily Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Preschool Daily Program Updates</h1>
+
+        <!-- Form for submitting daily updates -->
+        <form id="dailyUpdateForm">
+            <label for="classSelect">Select Class:</label>
+            <select id="classSelect" required>
+                <option value="Nursery">Nursery</option>
+                <option value="Playgroup">Playgroup</option>
+                <option value="Junior KG">Junior KG</option>
+                <option value="Senior KG">Senior KG</option>
+            </select>
+            
+            <label for="day">Day of the Week:</label>
+            <select id="day" required>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+
+            <label for="program">Program Update (9:30 AM - 12:30 PM):</label>
+            <textarea id="program" rows="4" placeholder="Enter today's activities..." required></textarea>
+
+            <label for="imageUpload">Upload JPEG Image:</label>
+            <input type="file" id="imageUpload" accept="image/jpeg" required>
+
+            <button type="submit">Submit Update</button>
+        </form>
+
+        <!-- Admin Login -->
+        <div id="adminPanel">
+            <h2>Admin Panel</h2>
+            <form id="adminLoginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="adminActions" style="display: none;">
+                <h3>View and Manage Updates</h3>
+                <div id="adminUpdatesContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+

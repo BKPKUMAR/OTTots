@@ -1,0 +1,95 @@
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea, select, input[type="file"], input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#adminUpdatesContainer {
+    margin-top: 20px;
+}
+
+.update-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.update-item h4 {
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+.update-item p {
+    margin: 5px 0;
+}
+
+.update-item img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+button.transfer-btn {
+    background-color: #28a745;
+}
+
